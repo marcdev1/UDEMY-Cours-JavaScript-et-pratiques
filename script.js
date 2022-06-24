@@ -786,8 +786,16 @@ const myCountry = {
 
 console.log(myCountry.checkIsland())
 
+
 console.log("")
 console.log("")
+console.log("-----------------------------------------------------------")
+console.log("-----------------------------------------------------------")
+console.log(" -------------- ITERATIONS: THE 'FOR' LOOP ----------------")
+console.log("-----------------------------------------------------------")
+console.log("-----------------------------------------------------------")
+
+
 console.log("")
 console.log("")
 
