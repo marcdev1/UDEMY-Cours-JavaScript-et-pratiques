@@ -785,10 +785,13 @@ console.log(jonas);*/
 // },
 
 // console.log(myCountry.checkIsland())
-
-
-// console.log("")
-// console.log("")
+console.log("")
+console.log("")
+console.log("-------------------------------");
+console.log("----------- 46 ----------------");
+console.log("-------------------------------");
+console.log("")
+console.log("")
 console.log("-----------------------------------------------------------")
 console.log("-----------------------------------------------------------")
 console.log(" -------------- ITERATIONS: THE 'FOR' LOOP ----------------")
@@ -796,13 +799,51 @@ console.log("-----------------------------------------------------------")
 console.log("-----------------------------------------------------------")
 
 //  'for' loop keeps running while consition is TRUE
-for(let rep=1; rep<=50; rep++){ // rep++ équivaut à rep=rep+1
+console.log( "Syntaxe => for(CONDITION ; TANTQUE ; INCREMENT ) { FAIRE }; ")
+console.log("")
+console.log("")
+for(let rep=1; rep<=5; rep++){ // rep++ équivaut à rep=rep+1
     console.log(`Lever poid répétition ${rep}`)
 };
 
 
+
 console.log("")
 console.log("")
+
+console.log("")
+console.log("")
+console.log("-------------------------------");
+console.log("----------- 47 ----------------");
+console.log("-------------------------------");
+console.log("")
+console.log("")
+console.log("-----------------------------------------------------------")
+console.log("-----------------------------------------------------------")
+console.log(" ------- Looping Arrays, Breaking and Continuing ----------")
+console.log("-----------------------------------------------------------")
+console.log("-----------------------------------------------------------")
+
+const jonasArray = [
+    'Jonas',
+    'Schedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael','Peter','Steven'],
+    true,
+];
+
+// Write a 'for' loop to log each element of jonasArray
+// console.log(jonasArray[0]);
+// console.log(jonasArray[1]);
+
+// console.log(jonasArray[4]);
+
+
+for(let i = 0; i<jonasArray.length; i++){
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
 
 console.log("")
 console.log("")
