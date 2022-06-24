@@ -534,266 +534,271 @@ console.log(jonas);*/
 
 // Challenge
 //"Jonas has 3 friends and his best friend is called Michael"
-console.log("")
+// console.log("")
 
-const jo = {
-    firstName: 'Jonas',
-    lastName:'Schmedtmann',
-    age: 2037 - 1991,
-    job: 'Teacher',
-    friends: ['Michael', 'Peter', 'Steven']
-};
-const J = jo.firstName;
-const xFriends = friends.length;
-const bestFriend = friends[0];
-console.log(J, xFriends, bestFriend);
+// const jo = {
+//     firstName: 'Jonas',
+//     lastName:'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'Teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };
+// const J = jo.firstName;
+// const xFriends = friends.length;
+// const bestFriend = friends[0];
+// console.log(J, xFriends, bestFriend);
 
-console.log(`${jo.firstName} has ${jo.friends.length} friends and his fucking best friend is the mod'fucker ${jo.friends[0]}`);
+// console.log(`${jo.firstName} has ${jo.friends.length} friends and his fucking best friend is the mod'fucker ${jo.friends[0]}`);
 
-// console.log(`${J} has ${xFriends} friends and his best friend is called ${bestFriend}`);
+// // console.log(`${J} has ${xFriends} friends and his best friend is called ${bestFriend}`);
 
-console.log("")
-console.log("")
+// console.log("")
+// console.log("")
 
-console.log("-------------------------------");
-console.log("----------- 44 ----------------");
-console.log("-------------------------------");
+// console.log("-------------------------------");
+// console.log("----------- 44 ----------------");
+// console.log("-------------------------------");
 
-console.log("")
-console.log("")
+// console.log("")
+// console.log("")
 
-console.log("- 44 ------ Object method ------")
-
-
-/* Commenté pour tester le 'THIS'
-const jonas = {
-    firstName: 'Jonas',
-    lastName:'Schmedtmann',
-    birthYear: 1991,
-    job: 'Teacher',
-    friends: ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense: true,
-
-    // calcAge: function(birthYear) {
-    //     return 2037 - birthYear;
-
-    calcAge: function(birthYear) {
-        return 2037 - birthYear;
-    }
-};
-*/
-
-console.log("L'expression d'une fonction peut etre la valeur d'une propriétée d'un objet")
-console.log("Toutes fonction intégrée a un object est appelée une 'methode'. ")
-console.log("Tout type de données peut être intégrer dans un object")
-
-console.log("Il est possible d'accéeder aux propriétées des fonctions comme pour la méthode calcAge")
+// console.log("- 44 ------ Object method ------")
 
 
-// console.log(jonas.calcAge(1991)); // ici jonas.calage deviendra la valeur de la fonction. Avec les parenteses () on appel la fonction avec le parametre 1991.
-// console.log(jonas[calcAge(1991)]); // Attention mauvaise syntaxe!
-// console.log(jonas['calcAge'](1991)); // attention a ne pas oublier les string 'calcAge'. ici jonas['calcAge'] deviendra la valeur de la fonction. Avec les parenteses () on appel la fonction avec le parametre 1991.
+// /* Commenté pour tester le 'THIS'
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName:'Schmedtmann',
+//     birthYear: 1991,
+//     job: 'Teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
 
-// THIS keyword
+//     // calcAge: function(birthYear) {
+//     //     return 2037 - birthYear;
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName:'Schmedtmann',
-    birthYear: 1991,
-    job: 'Teacher',
-    friends: ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense: true,
+//     calcAge: function(birthYear) {
+//         return 2037 - birthYear;
+//     }
+// };
+// */
 
-    // calcAge: function() {
-    //     console.log(this);
-    //     return 2037 - this.birthYear;
+// console.log("L'expression d'une fonction peut etre la valeur d'une propriétée d'un objet")
+// console.log("Toutes fonction intégrée a un object est appelée une 'methode'. ")
+// console.log("Tout type de données peut être intégrer dans un object")
 
-    // calcAge: function(birthYear) {
-    //     return 2037 - birthYear;
-
-    calcAge: function() {
-        return 2037 - this.birthYear;
-
-    }
-};
-console.log(jonas.calcAge());
-
-// console.log(jonas['calcAge'](1991))
-//Challenge
-//"Jonas is a 46 years old teacher. + toutes les donnes de l'objet. abd he has a driver's License (ou pas)"
-
-const marc = {
-    firstName: 'Marc',
-    lastName:'DEVI',
-    birthYear: 1975,
-    job: 'Developper',
-    friends: ['Jack', 'Bernard', 'Benoit'],
-    hasDriversLicense: true,
-
-    calcAge: function() {
-        this.age = 2022 - this.birthYear;
-        return this.age;
-    },
-
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
-    }
-};
-
-const vincent = {
-    firstName: 'Vincent',
-    lastName:'DEVI',
-    birthYear: 1980,
-    job:'owner company',
-    friends: ['Seb', 'Michael', 'Gertrude',],
-    hasDriversLicense: false,
-
-    calcAge: function(){
-        this.age = 2022 - this.birthYear;
-        return this.age;
-    },
-
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()} years old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
-    }
-}
-
-console.log(marc.getSummary());
-console.log(vincent.getSummary());
+// console.log("Il est possible d'accéeder aux propriétées des fonctions comme pour la méthode calcAge")
 
 
+// // console.log(jonas.calcAge(1991)); // ici jonas.calage deviendra la valeur de la fonction. Avec les parenteses () on appel la fonction avec le parametre 1991.
+// // console.log(jonas[calcAge(1991)]); // Attention mauvaise syntaxe!
+// // console.log(jonas['calcAge'](1991)); // attention a ne pas oublier les string 'calcAge'. ici jonas['calcAge'] deviendra la valeur de la fonction. Avec les parenteses () on appel la fonction avec le parametre 1991.
 
-console.log("")
-console.log("")
+// // THIS keyword
 
-console.log("-------------------------------");
-console.log("----------- 45 ----------------");
-console.log("-------------------------------");
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName:'Schmedtmann',
+//     birthYear: 1991,
+//     job: 'Teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
 
-console.log("")
-console.log("")
+//     // calcAge: function() {
+//     //     console.log(this);
+//     //     return 2037 - this.birthYear;
 
-console.log("- 45 ------ CODING CHALLENGE #3 ------")
+//     // calcAge: function(birthYear) {
+//     //     return 2037 - birthYear;
 
-console.log("1- Céation des objets pour Mark Miller et John Smith");
+//     calcAge: function() {
+//         return 2037 - this.birthYear;
 
-const mark = {
-    fullName : 'MarK Miller',
-    mass: 78,
-    height: 1.69,
+//     }
+// };
+// console.log(jonas.calcAge());
 
-    calcBMI: function() {
-        this.BMI = this.mass/(this.height*this.height);
-        return this.BMI
-    }
-}
+// // console.log(jonas['calcAge'](1991))
+// //Challenge
+// //"Jonas is a 46 years old teacher. + toutes les donnes de l'objet. abd he has a driver's License (ou pas)"
 
-const john = {
-    fullName: 'John Smith',
-    mass: 90,
-    height: 1.71,
+// const marc = {
+//     firstName: 'Marc',
+//     lastName:'DEVI',
+//     birthYear: 1975,
+//     job: 'Developper',
+//     friends: ['Jack', 'Bernard', 'Benoit'],
+//     hasDriversLicense: true,
 
-    calcBMI: function() {
-        this.BMI = this.mass/(this.height*this.height);
-        return this.BMI
-    }
-}
-console.log(mark.calcBMI());
-console.log(john.calcBMI());
+//     calcAge: function() {
+//         this.age = 2022 - this.birthYear;
+//         return this.age;
+//     },
 
-mark.calcBMI();
-john.calcBMI();
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+//     }
+// };
 
-if (john.BMI > mark.BMI) {
-    console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`)    
-} else {
-    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is lower than ${john.fullName}'s (${john.calcBMI()})`)
-}
+// const vincent = {
+//     firstName: 'Vincent',
+//     lastName:'DEVI',
+//     birthYear: 1980,
+//     job:'owner company',
+//     friends: ['Seb', 'Michael', 'Gertrude',],
+//     hasDriversLicense: false,
 
+//     calcAge: function(){
+//         this.age = 2022 - this.birthYear;
+//         return this.age;
+//     },
 
-console.log("")
-console.log("")
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge()} years old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+//     }
+// }
 
-console.log("-----------------------------------------------------------");
-console.log("----------- EXERCICES Feuille ASSIGNMENTS  ----------------");
-console.log("-----------------------------------------------------------");
-
-console.log("")
-console.log("")
-
-console.log("----------- EXERCICE Intro to objects  ----------------");
-
-// Creer un object appelé "myCountry" avec un pays de votre choix contenant 'country', 'capital', 'language,' population and 'neighbours' (un tableau comme vu précédement).
-/*
-const myCountry = {
-    country: 'France',
-    capital: 'Paris',
-    language: 'French',
-    population: 65,
-    neighbourgs: ['Belgique', 'Luxembourg', 'Allemagne','Suisse','Italie', 'Espagne']
-}
-console.log(myCountry);
-
-console.log("----------- EXERCICE Dot vs Bracket notation ----------------");
+// console.log(marc.getSummary());
+// console.log(vincent.getSummary());
 
 
-//1 log a stringthe country and all caracteristics
 
-console.log(`${myCountry.country} has ${myCountry.population} milion ${myCountry.language}-speaking people, ${myCountry.neighbourgs.length} neighbouring countries and a capital called ${myCountry.capital}`);
+// console.log("")
+// console.log("")
 
-//2 increase the country's population by two million using dot notation, and then decrease it by two million using brackets notation.
+// console.log("-------------------------------");
+// console.log("----------- 45 ----------------");
+// console.log("-------------------------------");
 
-myCountry.population += 2;
-console.log(myCountry.population);
-console.log(myCountry);
+// console.log("")
+// console.log("")
 
-myCountry['population'] -= 2;
-console.log(myCountry);
-*/
-console.log("----------- EXERCICE Object Methods ----------------");
-/*
-1. Add a method called 'describe' to the 'myCountry' object. This method
-will log a string to the console, similar to the string logged in the previous
-assignment, but this time using the 'this' keyword.
-2. Call the 'describe' method
-3. Add a method called 'checkIsland' to the 'myCountry' object. This
-method will set a new property on the object, called 'isIsland'.
-'isIsland' will be true if there are no neighbouring countries, and false if
-there are. Use the ternary operator to set the property.
-*/
+// console.log("- 45 ------ CODING CHALLENGE #3 ------")
 
-//1.
+// console.log("1- Céation des objets pour Mark Miller et John Smith");
 
-const myCountry = {
-    country: 'France',
-    capital: 'Paris',
-    language: 'French',
-    population: 65,
-    neighbourgs: ['Belgique', 'Luxembourg', 'Allemagne','Suisse','Italie', 'Espagne'],
+// const mark = {
+//     fullName : 'MarK Miller',
+//     mass: 78,
+//     height: 1.69,
 
-    describe: function () {
-        console.log(
-            `${this.country} has ${this.population} milion ${this.language}-speaking people, ${this.neighbourgs.length} neighbouring countries and a capital called ${this.capital}`)
-    },
+//     calcBMI: function() {
+//         this.BMI = this.mass/(this.height*this.height);
+//         return this.BMI
+//     }
+// }
 
-    checkIsland: function(isIsland) {
-        if (this.neighbourgs.length = 0) {
-            console.log(`${this.country} is not an Island!`)
-        } else {
-            console.log(`${this.country} is an Island!`)
-        }
-},
+// const john = {
+//     fullName: 'John Smith',
+//     mass: 90,
+//     height: 1.71,
 
-console.log(myCountry.checkIsland())
+//     calcBMI: function() {
+//         this.BMI = this.mass/(this.height*this.height);
+//         return this.BMI
+//     }
+// }
+// console.log(mark.calcBMI());
+// console.log(john.calcBMI());
+
+// mark.calcBMI();
+// john.calcBMI();
+
+// if (john.BMI > mark.BMI) {
+//     console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`)    
+// } else {
+//     console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is lower than ${john.fullName}'s (${john.calcBMI()})`)
+// }
 
 
-console.log("")
-console.log("")
+// console.log("")
+// console.log("")
+
+// console.log("-----------------------------------------------------------");
+// console.log("----------- EXERCICES Feuille ASSIGNMENTS  ----------------");
+// console.log("-----------------------------------------------------------");
+
+// console.log("")
+// console.log("")
+
+// console.log("----------- EXERCICE Intro to objects  ----------------");
+
+// // Creer un object appelé "myCountry" avec un pays de votre choix contenant 'country', 'capital', 'language,' population and 'neighbours' (un tableau comme vu précédement).
+// /*
+// const myCountry = {
+//     country: 'France',
+//     capital: 'Paris',
+//     language: 'French',
+//     population: 65,
+//     neighbourgs: ['Belgique', 'Luxembourg', 'Allemagne','Suisse','Italie', 'Espagne']
+// }
+// console.log(myCountry);
+
+// console.log("----------- EXERCICE Dot vs Bracket notation ----------------");
+
+
+// //1 log a stringthe country and all caracteristics
+
+// console.log(`${myCountry.country} has ${myCountry.population} milion ${myCountry.language}-speaking people, ${myCountry.neighbourgs.length} neighbouring countries and a capital called ${myCountry.capital}`);
+
+// //2 increase the country's population by two million using dot notation, and then decrease it by two million using brackets notation.
+
+// myCountry.population += 2;
+// console.log(myCountry.population);
+// console.log(myCountry);
+
+// myCountry['population'] -= 2;
+// console.log(myCountry);
+// */
+// console.log("----------- EXERCICE Object Methods ----------------");
+// /*
+// 1. Add a method called 'describe' to the 'myCountry' object. This method
+// will log a string to the console, similar to the string logged in the previous
+// assignment, but this time using the 'this' keyword.
+// 2. Call the 'describe' method
+// 3. Add a method called 'checkIsland' to the 'myCountry' object. This
+// method will set a new property on the object, called 'isIsland'.
+// 'isIsland' will be true if there are no neighbouring countries, and false if
+// there are. Use the ternary operator to set the property.
+// */
+
+// //1.
+
+// const myCountry = {
+//     country: 'France',
+//     capital: 'Paris',
+//     language: 'French',
+//     population: 65,
+//     neighbourgs: ['Belgique', 'Luxembourg', 'Allemagne','Suisse','Italie', 'Espagne'],
+
+//     describe: function () {
+//         console.log(
+//             `${this.country} has ${this.population} milion ${this.language}-speaking people, ${this.neighbourgs.length} neighbouring countries and a capital called ${this.capital}`)
+//     },
+
+//     checkIsland: function(isIsland) {
+//         if (this.neighbourgs.length = 0) {
+//             console.log(`${this.country} is not an Island!`)
+//         } else {
+//             console.log(`${this.country} is an Island!`)
+//         }
+// },
+
+// console.log(myCountry.checkIsland())
+
+
+// console.log("")
+// console.log("")
 console.log("-----------------------------------------------------------")
 console.log("-----------------------------------------------------------")
 console.log(" -------------- ITERATIONS: THE 'FOR' LOOP ----------------")
 console.log("-----------------------------------------------------------")
 console.log("-----------------------------------------------------------")
+
+//  'for' loop keeps running while consition is TRUE
+for(let rep=1; rep<=50; rep++){ // rep++ équivaut à rep=rep+1
+    console.log(`Lever poid répétition ${rep}`)
+};
 
 
 console.log("")
