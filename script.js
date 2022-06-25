@@ -298,14 +298,14 @@ console.log("----------------- EXERCICE -----------------")
 const calcAge= function(birthYear){
     return 2037 - birthYear;
 }
-const years = [1990, 1967, 2002, 2010, 2018];
+const year = [1990, 1967, 2002, 2010, 2018];
 
-const age1 =calcAge(years[0]);
-const age2 =calcAge(years[1]);
-const age3 =calcAge(years[years.length -1]);
+const age1 =calcAge(year[0]);
+const age2 =calcAge(year[1]);
+const age3 =calcAge(year[year.length -1]);
 console.log(age1, age2, age3);
 
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -1])];
+const ages = [calcAge(year[0]), calcAge(year[1]), calcAge(year[year.length -1])];
 
 console.log(ages)
 
@@ -620,7 +620,7 @@ console.log(jonas);*/
 
 // // console.log(jonas['calcAge'](1991))
 // //Challenge
-// //"Jonas is a 46 years old teacher. + toutes les donnes de l'objet. abd he has a driver's License (ou pas)"
+// //"Jonas is a 46 year old teacher. + toutes les donnes de l'objet. abd he has a driver's License (ou pas)"
 
 // const marc = {
 //     firstName: 'Marc',
@@ -832,7 +832,7 @@ const jonasArray = [
     ['Michael','Peter','Steven'],
     true,
 ];
-
+const types = [];
 // Write a 'for' loop to log each element of jonasArray
 // console.log(jonasArray[0]);
 // console.log(jonasArray[1]);
@@ -841,13 +841,68 @@ const jonasArray = [
 
 
 for(let i = 0; i<jonasArray.length; i++){
+    // Lecture à partir du tableau jonasArray
+    console.log(jonasArray[i], typeof jonasArray[i]);
+    //---------
+    // Création et écriture dans un tableau de manière auto
+    // types[i] = typeof jonasArray[i];
+    //---------
+types.push(typeof jonasArray[i]); // '.push' rajoute un élément en fin de tableau. il est préférable de rajouter un élément de tableau plutot a lafin qu'au début. c'est plus"propre" 
+
+}
+
+console.log(types);
+
+// Exemple: si l'on souhaite calculer l'age à partir de la date de naissance puis le stocker dans un nvx tableau:
+const years = [1991, 2007, 1969, 2020, 1975];
+const age = [] // on cré un tableau vide où viendront se stocker les ages calulés
+
+for (let i = 0; i<years.length; i++){
+    // 2037 - years[i]
+    age[i] = (2022 - years[i]);
+    // age.push(2037 - years[i]);
+};
+console.log(age);
+
+
+// continue and break the loop
+//continue sert à passer l'itération en cours de la boucle en cours pour passer à la prochaine itération.
+//break est utilisé pour completement terminer la boucle en cours.
+// DEUX Exemples:
+console.log("")
+console.log("")
+console.log('--- ONLY STRINGS ---')
+for(let i = 0; i<jonasArray.length; i++){
+    if(typeof jonasArray[i] !== 'string') continue; // Ici si l'element du tableau jonasArray n'est pas (!==) une string alors on 'zap' l'itération en cours. 
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
 
+console.log("")
+console.log('--- BREAK with number ---')
+for(let i = 0; i<jonasArray.length; i++){
+    if(typeof jonasArray[i] == 'number') break; // Ici si l'element du tableau jonasArray est un 'number' alors on stop et sort de la boucle en cours. 
+    console.log(i, jonasArray[i], typeof jonasArray[i]);
+}
 
 console.log("")
 console.log("")
+console.log("-------------------------------");
+console.log("----------- 48 ----------------");
+console.log("-------------------------------");
 console.log("")
+console.log("")
+console.log("-----------------------------------------------------------")
+console.log("-----------------------------------------------------------")
+console.log(" ------- Looping backwards and loops in loops ----------")
+console.log("-----------------------------------------------------------")
+console.log("-----------------------------------------------------------")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+
+
+
 console.log("")
 console.log("")
 console.log("")
