@@ -785,127 +785,262 @@ console.log(jonas);*/
 // },
 
 // console.log(myCountry.checkIsland())
-console.log("")
-console.log("")
-console.log("-------------------------------");
-console.log("----------- 46 ----------------");
-console.log("-------------------------------");
-console.log("")
-console.log("")
-console.log("-----------------------------------------------------------")
-console.log("-----------------------------------------------------------")
-console.log(" -------------- ITERATIONS: THE 'FOR' LOOP ----------------")
-console.log("-----------------------------------------------------------")
-console.log("-----------------------------------------------------------")
+// console.log("")
+// console.log("")
+// console.log("-------------------------------");
+// console.log("----------- 46 ----------------");
+// console.log("-------------------------------");
+// console.log("")
+// console.log("")
+// console.log("-----------------------------------------------------------")
+// console.log("-----------------------------------------------------------")
+// console.log(" -------------- ITERATIONS: THE 'FOR' LOOP ----------------")
+// console.log("-----------------------------------------------------------")
+// console.log("-----------------------------------------------------------")
 
-//  'for' loop keeps running while consition is TRUE
-console.log( "Syntaxe => for(CONDITION ; TANTQUE ; INCREMENT ) { FAIRE }; ")
+// //  'for' loop keeps running while consition is TRUE
+// console.log( "Syntaxe => for(CONDITION ; TANTQUE ; INCREMENT ) { FAIRE }; ")
+// console.log("")
+// console.log("")
+// for(let rep=1; rep<=5; rep++){ // rep++ équivaut à rep=rep+1
+//     console.log(`Lever poid répétition ${rep}`)
+// };
+
+
+
+// console.log("")
+// console.log("")
+
+// console.log("")
+// console.log("")
+// console.log("-------------------------------");
+// console.log("----------- 47 ----------------");
+// console.log("-------------------------------");
+// console.log("")
+// console.log("")
+// console.log("-----------------------------------------------------------")
+// console.log("-----------------------------------------------------------")
+// console.log(" ------- Looping Arrays, Breaking and Continuing ----------")
+// console.log("-----------------------------------------------------------")
+// console.log("-----------------------------------------------------------")
+
+// const jonasArray = [
+//     'Jonas',
+//     'Schedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael','Peter','Steven'],
+//     true,
+// ];
+// const types = [];
+// // Write a 'for' loop to log each element of jonasArray
+// // console.log(jonasArray[0]);
+// // console.log(jonasArray[1]);
+
+// // console.log(jonasArray[4]);
+
+
+// for(let i = 0; i<jonasArray.length; i++){
+//     // Lecture à partir du tableau jonasArray
+//     console.log(jonasArray[i], typeof jonasArray[i]);
+//     //---------
+//     // Création et écriture dans un tableau de manière auto
+//     // types[i] = typeof jonasArray[i];
+//     //---------
+// types.push(typeof jonasArray[i]); // '.push' rajoute un élément en fin de tableau. il est préférable de rajouter un élément de tableau plutot a lafin qu'au début. c'est plus"propre" 
+
+// }
+
+// console.log(types);
+
+// // Exemple: si l'on souhaite calculer l'age à partir de la date de naissance puis le stocker dans un nvx tableau:
+// const years = [1991, 2007, 1969, 2020, 1975];
+// const age = [] // on cré un tableau vide où viendront se stocker les ages calulés
+
+// for (let i = 0; i<years.length; i++){
+//     // 2037 - years[i]
+//     age[i] = (2022 - years[i]);
+//     // age.push(2037 - years[i]);
+// };
+// console.log(age);
+
+
+// // continue and break the loop
+// //continue sert à passer l'itération en cours de la boucle en cours pour passer à la prochaine itération.
+// //break est utilisé pour completement terminer la boucle en cours.
+// // DEUX Exemples:
+// console.log("")
+// console.log("")
+// console.log('--- ONLY STRINGS ---')
+// for(let i = 0; i<jonasArray.length; i++){
+//     if(typeof jonasArray[i] !== 'string') continue; // Ici si l'element du tableau jonasArray n'est pas (!==) une string alors on 'zap' l'itération en cours. 
+//     console.log(jonasArray[i], typeof jonasArray[i]);
+// }
+
+// console.log("")
+// console.log('--- BREAK with number ---')
+// for(let i = 0; i<jonasArray.length; i++){
+//     if(typeof jonasArray[i] == 'number') break; // Ici si l'element du tableau jonasArray est un 'number' alors on stop et sort de la boucle en cours. 
+//     console.log(i, jonasArray[i], typeof jonasArray[i]);
+// }
+
+// console.log("")
+// console.log("")
+// console.log("-------------------------------");
+// console.log("----------- 48 ----------------");
+// console.log("-------------------------------");
+// console.log("")
+// console.log("")
+// console.log("-----------------------------------------------------------")
+// console.log("-----------------------------------------------------------")
+// console.log(" ------- Looping backwards and loops in loops ----------")
+// console.log("-----------------------------------------------------------")
+// console.log("-----------------------------------------------------------")
+// console.log("")
+// console.log("-----------------------------------------------------------")
+// console.log("----------------- Looping backwards -----------------------");
+// console.log("-----------------------------------------------------------")
+
+// const marc = [
+//     'Marc',
+//     'Dev',
+//     2037-1975,
+//     'student'
+//     ['Jack', 'bernard', 'Valérie']
+// ];
+
+// for(let i = marc.length-1; i >=0; i--) {
+//     console.log(`i, marc[i]`)
+// }
+// console.log("")
+// console.log("")
+// console.log("")
+
+// console.log("-----------------------------------------------------------")
+// console.log("------------------ loops in loops -------------------------");
+// console.log("-----------------------------------------------------------")
+
+// for(let exercise =1; exercise <4 ; exercise++) {
+//     console.log(`------ Starting exercise ${exercise} ----------------------`);
+//     for (rep=1; rep<6; rep++) {
+//         console.log(`------ Exercise ${exercise} Répétition levée de poid ${rep} ------`);
+//     };
+// };
+
+// console.log("")
+// console.log("")
+// console.log("-------------------------------");
+// console.log("----------- 49 ----------------");
+// console.log("-------------------------------");
+// console.log("")
+// console.log("")
+// console.log("-----------------------------------------------------------")
+// console.log("-----------------------------------------------------------")
+// console.log("----------------------- WHILE Loop ------------------------")
+// console.log("-----------------------------------------------------------")
+// console.log("-----------------------------------------------------------")
+// console.log("")
+
+// console.log("La condition d'initialisation de place juste avant la boucle WHILE");
+
+// let repet = 1;
+// while (repet <= 10 ){
+//     console.log(`Lifting weights repetition ${repet}`);
+//     repet++;
+// }
+
+
+
+console.log("EXEMPLE simple ne dépendfant pas d'un compteur mais d'une variable aléatoir comme un LANCE DE DES ");
+
+// let dès = Math.trunc(Math.random()*6)+1;
+// console.log(dès);
+// while (dès !== 6) {
+//     console.log(`Le numero ${dès} est sorti`);
+//     let dès = Math.trunc(Math.random()*6)+1;
+// };
+
+
+
 console.log("")
 console.log("")
-for(let rep=1; rep<=5; rep++){ // rep++ équivaut à rep=rep+1
-    console.log(`Lever poid répétition ${rep}`)
+
+console.log("")
+console.log("")
+
+console.log("-----------------------------------------------------------");
+console.log("----------- EXERCICES Feuille ASSIGNMENTS  ----------------");
+console.log("-----------------------------------------------------------");
+
+console.log("")
+console.log("")
+
+console.log("----------- EXERCICE LECTURE: Iteration: The for Loop  ----------------");
+
+
+/*
+----------- LECTURE: Iteration: The for Loop -----------
+1. There are elections in your country! In a small town, there are only 50 voters.
+Use a for loop to simulate the 50 people voting, by logging a string like this to
+the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
+*/
+/*
+console.log("")
+console.log("")
+
+for (let voter = 1; voter < 51; voter++) {
+    console.log(`Le votant numero ${voter} a voté`);
 };
+*/
 
 
 
-console.log("")
-console.log("")
 
-console.log("")
-console.log("")
-console.log("-------------------------------");
-console.log("----------- 47 ----------------");
-console.log("-------------------------------");
-console.log("")
-console.log("")
-console.log("-----------------------------------------------------------")
-console.log("-----------------------------------------------------------")
-console.log(" ------- Looping Arrays, Breaking and Continuing ----------")
-console.log("-----------------------------------------------------------")
-console.log("-----------------------------------------------------------")
-
-const jonasArray = [
-    'Jonas',
-    'Schedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael','Peter','Steven'],
-    true,
-];
-const types = [];
-// Write a 'for' loop to log each element of jonasArray
-// console.log(jonasArray[0]);
-// console.log(jonasArray[1]);
-
-// console.log(jonasArray[4]);
+/*
+*************************************************************
 
 
-for(let i = 0; i<jonasArray.length; i++){
-    // Lecture à partir du tableau jonasArray
-    console.log(jonasArray[i], typeof jonasArray[i]);
-    //---------
-    // Création et écriture dans un tableau de manière auto
-    // types[i] = typeof jonasArray[i];
-    //---------
-types.push(typeof jonasArray[i]); // '.push' rajoute un élément en fin de tableau. il est préférable de rajouter un élément de tableau plutot a lafin qu'au début. c'est plus"propre" 
-
-}
-
-console.log(types);
-
-// Exemple: si l'on souhaite calculer l'age à partir de la date de naissance puis le stocker dans un nvx tableau:
-const years = [1991, 2007, 1969, 2020, 1975];
-const age = [] // on cré un tableau vide où viendront se stocker les ages calulés
-
-for (let i = 0; i<years.length; i++){
-    // 2037 - years[i]
-    age[i] = (2022 - years[i]);
-    // age.push(2037 - years[i]);
-};
-console.log(age);
+----------- LECTURE: Looping Arrays, Breaking and Continuing -----------
+1. Let's bring back the 'populations' array from a previous assignment
+2. Use a for loop to compute an array called 'percentages2' containing the
+percentages of the world population for the 4 population values. Use the
+function 'percentageOfWorld1' that you created earlier
+3. Confirm that 'percentages2' contains exactly the same values as the
+'percentages' array that we created manually in the previous assignment,
+and reflect on how much better this solution is.
+*/
 
 
-// continue and break the loop
-//continue sert à passer l'itération en cours de la boucle en cours pour passer à la prochaine itération.
-//break est utilisé pour completement terminer la boucle en cours.
-// DEUX Exemples:
-console.log("")
-console.log("")
-console.log('--- ONLY STRINGS ---')
-for(let i = 0; i<jonasArray.length; i++){
-    if(typeof jonasArray[i] !== 'string') continue; // Ici si l'element du tableau jonasArray n'est pas (!==) une string alors on 'zap' l'itération en cours. 
-    console.log(jonasArray[i], typeof jonasArray[i]);
-}
 
-console.log("")
-console.log('--- BREAK with number ---')
-for(let i = 0; i<jonasArray.length; i++){
-    if(typeof jonasArray[i] == 'number') break; // Ici si l'element du tableau jonasArray est un 'number' alors on stop et sort de la boucle en cours. 
-    console.log(i, jonasArray[i], typeof jonasArray[i]);
-}
+/*
+*************************************************************
 
-console.log("")
-console.log("")
-console.log("-------------------------------");
-console.log("----------- 48 ----------------");
-console.log("-------------------------------");
-console.log("")
-console.log("")
-console.log("-----------------------------------------------------------")
-console.log("-----------------------------------------------------------")
-console.log(" ------- Looping backwards and loops in loops ----------")
-console.log("-----------------------------------------------------------")
-console.log("-----------------------------------------------------------")
-console.log("")
-console.log("")
-console.log("")
+----------- LECTURE: Looping Backwards and Loops in Loops -----------
+1. Store this array of arrays into a variable called 'listOfNeighbours'
+[['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+'Russia']];
+2. Log only the neighbouring countries to the console, one by one, not the entire
+arrays. Log a string like 'Neighbour: Canada' for each country
+3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't
+worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+
+*************************************************************
+
+
+----------- LECTURE: The while Loop -----------
+1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
+but this time using a while loop (call the array 'percentages3')
+2. Reflect on what solution you like better for this task: the for loop or the while
+loop?
+*/
+
 console.log("")
 
 
 
-console.log("")
-console.log("")
-console.log("")
+
+
+
 console.log("")
 console.log("")
 console.log("")
