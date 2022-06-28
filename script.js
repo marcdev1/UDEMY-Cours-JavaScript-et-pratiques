@@ -354,7 +354,7 @@ console.log(friends);
 console.log("");
 console.log("");
 
-console.log("La methode '.indeOf('Steven') ' permet de connaitre la position d'un element dans le tableau. Ici Steven est a la position 1 du tableau (Michael est la position zéro!!)")
+console.log("La methode '.indexOf('Steven') ' permet de connaitre la position d'un element dans le tableau. Ici Steven est a la position 1 du tableau (Michael est la position zéro!!)")
 
 console.log(friends.indexOf('Steven'));
 console.log("Si on demande un élément qui n'existe pas alors nous avons le retour '-1)")
@@ -371,7 +371,7 @@ console.log("Attention, '.includes' ne converti pas les nombre sous forme de STR
 
 if (friends.includes('Steven')) {
     console.log("Steven fait bien parti du tableau")
-} else console.log("Bah non il ne fait pas partis du tableau")
+} else console.log("Bah non il ne fait pas parti du tableau")
 console.log(friends)
 
 console.log("")
@@ -379,7 +379,7 @@ console.log("")
 
 if (friends.includes('Jean')) {
     console.log("Steven fait bien parti du tableau")
-} else console.log("Bah non, jean, ne fait pas partis du tableau")
+} else console.log("Bah non, jean, ne fait pas parti du tableau")
 console.log(friends)
 
 console.log("")
@@ -431,8 +431,8 @@ console.log("")
 const percentageOfWorld = (population) => population * 100 / 6000;
 
 
-// percentage = new Array((population[0]*100/6000), (population[1]*100/6000), (population[2]*100/6000), (population[3]*100/6000));
-// console.log(percentage)
+percentage = new Array((population[0]*100/6000), (population[1]*100/6000), (population[2]*100/6000), (population[3]*100/6000));
+console.log(percentage)
 
 percentage = new Array(
     percentageOfWorld(population[0]),
@@ -798,6 +798,12 @@ console.log(jonas);*/
 // console.log("-----------------------------------------------------------")
 // console.log("-----------------------------------------------------------")
 
+
+
+
+
+
+
 // //  'for' loop keeps running while consition is TRUE
 // console.log( "Syntaxe => for(CONDITION ; TANTQUE ; INCREMENT ) { FAIRE }; ")
 // console.log("")
@@ -984,14 +990,13 @@ console.log("----------- EXERCICE LECTURE: Iteration: The for Loop  ------------
 Use a for loop to simulate the 50 people voting, by logging a string like this to
 the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
 */
-/*
 console.log("")
 console.log("")
 
-for (let voter = 1; voter < 51; voter++) {
-    console.log(`Le votant numero ${voter} a voté`);
+for (let votant = 1; votant < 51; votant++) {
+    console.log(`Le votant numero ${votant} a voté`);
 };
-*/
+
 
 
 
@@ -1009,8 +1014,21 @@ function 'percentageOfWorld1' that you created earlier
 'percentages' array that we created manually in the previous assignment,
 and reflect on how much better this solution is.
 */
+console.log("")
+console.log("")
+console.log("1/")
+const popu = [65,55,15,300];
+console.log("")
+console.log("")
+console.log("2/")
 
-
+const percentages2=[];
+for (let i=0;i<popu.length;i++){
+    const perc= percentageOfWorld(popu[i]);
+    percentages2.push(perc);
+}
+console.log(percentages2);
+//const population = new Array(65,55,15,300)
 
 /*
 *************************************************************
@@ -1019,20 +1037,64 @@ and reflect on how much better this solution is.
 1. Store this array of arrays into a variable called 'listOfNeighbours'
 [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
 'Russia']];
+*/
+let listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia'],
+];
+
+
+/*
 2. Log only the neighbouring countries to the console, one by one, not the entire
 arrays. Log a string like 'Neighbour: Canada' for each country
+*/
+for (let i=0; i<listOfNeighbours.length; i++) {
+    for (let y=0; y<listOfNeighbours[i].length;y++){
+        console.log(`Le voisin: ${listOfNeighbours[i][y]}`);
+    }
+}
+
+
+/*
 3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't
 worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+*/
 
+
+/*
 *************************************************************
+*/
 
 
+/*
 ----------- LECTURE: The while Loop -----------
 1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
 but this time using a while loop (call the array 'percentages3')
 2. Reflect on what solution you like better for this task: the for loop or the while
 loop?
 */
+const popul = [65,55,15,300];
+console.log("")
+console.log("")
+console.log("2/")
+
+const percentages3=[];
+
+let i = 0;
+while (i<popul.length){
+    const perc= percentageOfWorld(popul[i]);
+    percentages3.push(perc);
+    i++
+}
+
+
+// for (let i=0;i<popul.length;i++){
+//     const perc= percentageOfWorld(popul[i]);
+//     percentages3.push(perc);
+// }
+console.log(percentages3);
+
 
 console.log("")
 
@@ -1041,6 +1103,25 @@ console.log("")
 
 
 
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+
+
+
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
 console.log("")
 console.log("")
 console.log("")
