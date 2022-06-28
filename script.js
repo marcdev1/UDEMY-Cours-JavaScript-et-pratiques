@@ -1097,16 +1097,86 @@ console.log(percentages3);
 
 
 console.log("")
-
-
-
-
-
-
 console.log("")
 console.log("")
 console.log("")
 console.log("")
+
+
+console.log("-------------------------------");
+console.log("----------- 50 ----------------");
+console.log("-------------------------------");
+console.log("")
+console.log("")
+console.log("-----------------------------------------------------------")
+console.log("-----------------------------------------------------------")
+console.log("----------------------- CODING CHALLENGE #4 ------------------------")
+console.log("-----------------------------------------------------------")
+console.log("-----------------------------------------------------------")
+console.log("")
+
+console.log("1. Creat an Array 'bills'")
+
+const facture = [22,295,176,440,37,105,10,1100,86,52];
+console.log(`La taille du tableau est de: ${facture.length} `);// Pour verrifier que le tableau soit bien créé
+const pourBoire = []; //tips
+const totalFacture = []; //totals
+
+//Utiliser la fonction 'calcTips' pour calculer le pouboire
+calcTip()
+
+// Calcul des pourboire
+// calcTip(22);
+// calcTip(facture[0])
+// console.log(calcTip(facture[0]));
+
+// Calcul du tableau pourBoire via le tableau facture
+for(let i=0; i<facture.length; i++){
+    const pour = calcTip(facture[i]);
+    pourBoire.push(pour);
+}
+
+// Calcul du tableau "totalFacture"
+for(let i =0; i<facture.length; i++){
+    totalFacture.push(facture[i] + pourBoire[i]);
+}
+console.log(facture)
+console.log(pourBoire)
+console.log(totalFacture)
+
+// 4 - BONUS FUNCTION
+
+// const arr = [1,2,3]; // inutile, ne pas confondre avec le 'arr' dans la fct 'calcAverage'
+
+function calcAverage(arr){
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++ ){
+    sum += arr[i]; // sum = sum + arr[i];
+    }
+    return sum/arr.length;
+}
+console.log (calcAverage([2,3,7]));
+console.log (calcAverage(facture));
+console.log (calcAverage(pourBoire));
+// console.log(calcAverage)
+
+// for (let i=0;i<popul.length;i++){
+//     const perc= percentageOfWorld(popul[i]);
+//     percentages3.push(perc);
+// }
+// for (let i=0; i<listOfNeighbours.length; i++) {
+//     for (let y=0; y<listOfNeighbours[i].length;y++){
+//         console.log(`Le voisin: ${listOfNeighbours[i][y]}`);
+//     }
+// }
+
+// function calcTip(note) {
+//     if (note>=50 && note<=300) { 
+//         return note*0.15;
+//     }else return note*0.2;
+// };
+
+
 console.log("")
 console.log("")
 console.log("")
